@@ -1,0 +1,13 @@
+name: ghaction workflow
+
+on:
+  push:
+    branches: 
+      - main
+      
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Welcome MSG
+        run: echo "Welcome to my first WF GH"
