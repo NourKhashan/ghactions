@@ -1,4 +1,4 @@
-name: ghaction workflow
+name: first ghaction workflow
 
 on:
   push:
