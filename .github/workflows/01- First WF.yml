@@ -6,8 +6,8 @@ on:
       - main
       
 jobs:
-  example_job:
+  first_test_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Welcome MSG
+      - name: Steps 01 - Print Welcome MSG
         run: echo "Welcome to my first WF GH"
