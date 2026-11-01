@@ -9,5 +9,11 @@ jobs:
   first_test_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Steps 01 - Print Welcome MSG
+      - name: Step 01 - Print Welcome MSG
         run: echo "Welcome to my first WF GH"
+
+      - name: Step 02 - Checkout Repository
+        uses: actions/checkout@v7
+
+      - name: Step 03 - Show List of Repository files
+        run: ls -la
