@@ -1,0 +1,23 @@
+name: WF For Push, and Pull Request
+
+on:
+  push:
+    branches:
+      - main
+      - "release/**"
+    paths:
+      - "src/**"
+  pull_request:
+    branches:
+      - main
+      - "release/**"
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 01 - Checkout Repository
+        uses: actions/checkout@v7
+
+      - name: Step 02 - Run tests
+        run: npm test
