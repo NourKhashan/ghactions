@@ -8,6 +8,6 @@ function greet2(name){
 
 module.exports = greet;
 
-if(require.main === module){
-    console.log(greet("world"));
-}
+// if(require.main === module){
+//     console.log(greet("world"));
+// }

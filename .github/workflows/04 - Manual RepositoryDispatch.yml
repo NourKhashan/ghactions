@@ -1,0 +1,12 @@
+name: Manual WF based on repository_dispatch
+
+on:
+  repository_dispatch: 
+    types:[incident_report]
+
+jobs:
+  handle_incident:
+    runs-on: ubuntu-latest:
+    steps:
+      - name: 01 - Print Incident Details
+        run: echo "Incidents DETAILS HERE!"
